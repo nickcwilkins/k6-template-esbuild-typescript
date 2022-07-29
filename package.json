@@ -1,0 +1,33 @@
+{
+  "author": "Nick Wilkins",
+  "license": "MIT",
+  "homepage": "https://github.com/nickcwilkins/k6-template-esbuild-typescript#readme",
+  "name": "k6-template-esbuild-typescript",
+  "version": "1.0.0",
+  "description": "A template for scaffolding k6 test projects using esbuild and TypeScript.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickcwilkins/k6-template-esbuild-typescript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nickcwilkins/k6-template-esbuild-typescript/issues"
+  },
+  "keywords": [
+    "k6",
+    "esbuild",
+    "javascript",
+    "typescript",
+    "templates",
+    "load-testing",
+    "performance-testing"
+  ],
+  "packageManager": "pnpm@7.6.0",
+  "scripts": {
+    "build": "find ./src -name *.ts -exec esbuild '{}' --bundle --outbase=src --outdir=dist --external:k6 --format=esm \\;",
+    "tsc": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/k6": "^0.37.1",
+    "esbuild": "^0.14.51"
+  }
+}
