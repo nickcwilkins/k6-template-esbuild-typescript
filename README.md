@@ -1,5 +1,7 @@
 # Template to use TypeScript with k6, via [esbuild](https://esbuild.github.io/)
 
+[![CI](https://github.com/nickcwilkins/k6-template-esbuild-typescript/actions/workflows/ci.yml/badge.svg)](https://github.com/nickcwilkins/k6-template-esbuild-typescript/actions/workflows/ci.yml)
+
 This is a template project based off of Grafana's own [k6 TypeScript template](https://github.com/grafana/k6-template-typescript).
 
 The difference is that instead of using Webpack as a bundler, this template uses esbuild so you can iterate on your TypeScript-based tests at lightning speed.⚡
